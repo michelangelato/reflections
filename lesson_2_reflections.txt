@@ -1,0 +1,39 @@
+What happens when you initialize a repository? Why do you need to do it?
+  git init creates a folder named .git in the directory and allows you to use
+  git commands within the directory.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+  when you commit you save a screenshot in the repository, in order to make valuable
+  and meaningful commits you need to track more than one changes that can occur over time.
+  You can add files from working directory to staging area as you change them and
+  proceed with the commit only when you reach a new state worth of a screenshot.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+  you can add modified files to staging area, than check all the changes using
+  git diff, you can also look at the change between staging area and the last commit
+  using git diff --staged.
+  Finally when you think your staging area contains all related logical change you
+  can commit them all in once.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+  Whenever I create a new experimental feature or a feature not directly related
+  with the functionalities of the software (eg. new translation).
+  Branches help because different person in the team can work indipendently at a
+  feature of the software while others continue with the main development.
+
+How do the diagrams help you visualize the branch structure?
+  Branch structure looks like a tree, so you can draw diagrams to quickly identify
+  the commit path and the entire structure of the repo.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+  The result is that we put all the commits of the two branches into one branch,
+  ordered by date. We can represent this in the diagram by creating a new circle
+  (a new commit) and connect the last circle of the two branches to this one.
+
+What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+manually?
+  The first approach is faster, the second one you have more control of the code.
